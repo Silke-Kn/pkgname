@@ -11,6 +11,8 @@ usethis::use_git()
 usethis::create_github_token()
 #execute the next line and paste your token
 gitcreds::gitcreds_set()
+usethis::use_git_remote("origin", url = NULL, overwrite = TRUE)
+#löscht Original
 #now we create a repo called project push to a repository
 usethis::use_github(private = FALSE)
 #create a readme file and edit later
